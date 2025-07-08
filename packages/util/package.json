@@ -1,0 +1,18 @@
+{
+  "name": "@monopnpm/util",
+  "version": "1.0.0",
+  "description": "基于 lodash 等的工具方法库",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195"
+  }
+}

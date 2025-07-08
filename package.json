@@ -1,0 +1,28 @@
+{
+  "name": "monopnpm",
+  "version": "1.0.0",
+  "description": "一个使用pnpm管理的monorepo仓库示例",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --filter @monopnpm/web dev",
+    "dev:ui": "pnpm --filter @monopnpm/ui dev",
+    "dev:util": "pnpm --filter @monopnpm/util dev",
+    "build": "pnpm --filter * build",
+    "lint": "eslint packages/**/*.{ts,tsx} --fix",
+    "format": "prettier --write packages/**/*.{ts,tsx,json,md}"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
