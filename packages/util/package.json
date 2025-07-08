@@ -1,6 +1,6 @@
 {
   "name": "@monopnpm/util",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "基于 lodash 等的工具方法库",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
