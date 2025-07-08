@@ -1,6 +1,6 @@
 {
   "name": "@monopnpm/web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React + Vite 的 Web 项目",
   "type": "module",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@monopnpm/ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React + Ant Design 的 UI 组件库",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
