@@ -1,6 +1,6 @@
 # Monopnpm
 
-这是一个使用 pnpm 管理的 monorepo 仓库示例
+这是一个使用 pnpm + turborepo + changesets 管理的 monorepo 仓库示例
 
 ## 项目结构
 

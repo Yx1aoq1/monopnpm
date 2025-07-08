@@ -4,14 +4,16 @@
   "description": "一个使用pnpm管理的monorepo仓库示例",
   "private": true,
   "scripts": {
+    "dev": "turbo dev",
     "dev:web": "pnpm --filter @monopnpm/web dev",
     "dev:ui": "pnpm --filter @monopnpm/ui dev",
     "dev:util": "pnpm --filter @monopnpm/util dev",
-    "build": "pnpm --filter * build",
+    "build": "turbo build check-types",
     "lint": "eslint packages/**/*.{ts,tsx} --fix",
     "format": "prettier --write packages/**/*.{ts,tsx,json,md}"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.5",
     "@types/node": "^24.0.10",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
@@ -21,8 +23,10 @@
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.0",
+    "turbo": "^2.5.4",
     "typescript": "^5.0.0"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "pnpm@10.0.0"
 }
